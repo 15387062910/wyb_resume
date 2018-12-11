@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wyb的个人简历</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_955805_xxk911h2pm.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >wyb</h1>
+                <h4 id="persona-tag" >Python / Java 后端开发相关</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">王乙丙</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">武汉学院</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2020</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">15387062910</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">1572834916@qq.com</span></li>
+                    <li>
+                        <label class="left-label">个人博客</label><a href="https://www.cnblogs.com/wyb666/">cnblogs.com/wyb666</a></li>
+                    <li>
+                        <label class="left-label">Github</label><a href="https://github.com/15387062910">github.com/15387062910</a></li>
+                </ul>
+            </div>
+            <!-- <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="66" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="69" max="100"></progress>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Ajax</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Python、Java、SQL</span>
+                    </li>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.jpg" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>武汉学院 - 软件工程 2016-2020</h3>
+                        <p>
+                            2017年和2018年连续两次获校二等奖学金，成绩优异，平均分超85
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">项目经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <!-- <li>
+                        <h3>2017年7月-2017年8月 智慧食堂项目 任后端开发工程师</h3>
+                        <p>使用django开发商户接口</p>
+                    </li> -->
+                    <li>
+                        <h3>2017年12月-2018年3月 参加大学生外包服务创新创业大赛</h3>
+                        <p>使用python开发爬虫，爬取智联、拉钩网站上的工作信息，使用MySQL数据库存储爬取到的数据</p>
+                    </li>
+                    <li>
+                        <h3>2018年8月 暑期项目实践</h3>
+                        <p>
+                            使用python爬取租房信息，对数据进行相应处理，调用高德地图接口，在地图上显示租房信息，开发搜索功能
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2018年7月-2018年12月 YOUNG团队 任后端开发工程师</h3>
+                        <p>设计二手市场项目的数据库结构与相关RestfulAPI接口, 使用flask开发用户登陆接口、物品相关接口以及意见反馈模块</p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="tech info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-jishufuwu"></i> <span class="info-title">技术经验</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        python相关: 使用过flask框架、django框架 
+                    </li>
+                    <li>
+                        爬虫相关: 使用过requests、selenium
+                    </li>
+                    <li>
+                        Java相关: 比较熟悉Java、使用过swing框架
+                    </li>
+                    <li>
+                        前端相关: 比较熟悉JavaScript，使用过Ajax、jQuery
+                    </li>
+                    <li>
+                        数据库相关: 熟悉sql、使用过MySQL、使用过mongoDB
+                    </li>
+                    <li>
+                        版本控制相关: 经常使用git，在GitHub中有代码库
+                    </li>
+                    <li>
+                        服务器相关: 用过Linux
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>四六级合格证书</h3>
+                        <p>
+                            在大二一年内通过四六级，具有基本的英语阅读能力
+                        </p>
+                    </li> 
+                    <li>
+                        <h3>软件设计师资格证书</h3>
+                        <p>
+                            在大二上学期参加计算机技术与软件专业技术资格（水平）考试，成功通过考试获得软件设计师资格证书
+                        </p>
+                    </li> 
+                    <li>
+                        <h3>蓝桥杯省三等奖</h3>
+                        <p>
+                            在大二下学期参加全国软件专业人才设计与创业大赛，获湖北赛区省三等奖
+                        </p>
+                    </li>                     
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <ul>
+                    <li>
+                        <h3>热爱技术</h3>
+                        <p>对web开发相关技术有浓厚兴趣，立志投身于IT开发行业</p>
+                    </li>
+                    <li>
+                        <h3>学习能力</h3>
+                        <p>自学能力强，通过自学考取了软件设计师资格证书</p>
+                    </li>
+                    <li>
+                        <h3>基本功</h3>
+                        <p>熟悉常用数据结构与常用算法，比较熟悉操作系统和计算机网络</p>
+                    </li>
+                    <li>
+                        <h3>发展相关</h3>
+                        <p>关注web开发相关技术发展，对网络安全有一定了解</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
